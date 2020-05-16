@@ -27,10 +27,10 @@ curl -sSL https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/hugo_
 
 echo "Building the Hugo site with: ./hugo ${HUGO_ARGS}"
 echo `ls` 
-cd exampleSite
+cd hugo-icarus-theme/exampleSite/
 echo `pwd`
 echo `ls`
-../hugo "${HUGO_ARGS}"
+../../hugo "${HUGO_ARGS}"
 
 TARGET_REPO_URL="https://${GITHUB_TOKEN}@github.com/${TARGET_REPO}.git"
 
