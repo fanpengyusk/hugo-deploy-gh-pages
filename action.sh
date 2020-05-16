@@ -27,7 +27,7 @@ curl -sSL https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/hugo_
 
 echo "Building the Hugo site with: ./hugo ${HUGO_ARGS}"
 cd exampleSite
-./hugo "${HUGO_ARGS}"
+/tmp/hugo "${HUGO_ARGS}"
 
 TARGET_REPO_URL="https://${GITHUB_TOKEN}@github.com/${TARGET_REPO}.git"
 
