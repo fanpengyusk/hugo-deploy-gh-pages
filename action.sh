@@ -26,8 +26,10 @@ echo "Downloading Hugo: ${HUGO_VERSION}"
 curl -sSL https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz > /tmp/hugo.tar.gz && tar -f /tmp/hugo.tar.gz -xz
 
 echo "Building the Hugo site with: ./hugo ${HUGO_ARGS}"
+echo `ls` 
 cd exampleSite
 echo `pwd`
+echo `ls`
 ../hugo "${HUGO_ARGS}"
 
 TARGET_REPO_URL="https://${GITHUB_TOKEN}@github.com/${TARGET_REPO}.git"
